@@ -4,7 +4,7 @@
   <li>
     <%= link_to "#{task.title}", task_path(task) %>
     <%= link_to "🗑",
-    tasks_path(@tasks), method: :delete, data: { confirm: "Are you sure you want to delete #{task.title}? "} %>
+    task_path(task), method: :delete, data: { confirm: "Are you sure you want to delete #{task.title}? "} %>
 
   </li>
  <% end  %>

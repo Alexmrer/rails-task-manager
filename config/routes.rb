@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   # Display one
   get 'tasks/:id', to: 'tasks#show', as: :task
   # Delete
-  delete 'tasks/id', to: 'tasks#destroy'
+  delete 'tasks/:id', to: 'tasks#destroy'
 end
